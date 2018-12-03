@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".match.detailmatch.DetailMatchActivity">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/parent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    app:contentPadding="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/detaildate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/card_itempadding"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"/>
+
+                    <TextView
+                            android:id="@+id/detailtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/card_itempadding"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:id="@+id/detailhomeimg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:scaleType="fitCenter"
+                            />
+
+                            <TextView
+                                    android:id="@+id/detailhometeam"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/itemtop"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp"/>
+                        </LinearLayout>
+
+                        <TextView
+                                android:id="@+id/detailhomescore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:gravity="end|center_vertical"
+                                android:textSize="36sp"
+                                android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="@string/vs"
+                                android:textSize="26sp"/>
+
+                        <TextView
+                                android:id="@+id/detailawayscore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:gravity="start|center_vertical"
+                                android:textSize="36sp"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                            <ImageView
+                                    android:id="@+id/detailawayimg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                            />
+
+                            <TextView
+                                    android:id="@+id/detailawayteam"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/itemtop"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/parent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/parent1"
+                    android:layout_marginBottom="4dp"
+                    app:contentPadding="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/detailhomegoal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:text="@string/goals"
+                                android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                                android:id="@+id/detailawaygoal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/detailhomeshot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:text="@string/shots"
+                                android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                                android:id="@+id/detailawayshot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/parent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/parent2"
+                    android:layout_marginBottom="4dp"
+                    app:contentPadding="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="4dp"
+                            android:text="@string/lineups"
+                            android:textSize="16sp"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/detailhomedefense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:text="@string/defense"
+                                android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                                android:id="@+id/detailawaydefense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/detailhomemodifield"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:text="@string/modified"
+                                android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                                android:id="@+id/detailawaymodifield"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/detailhomeforward"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:text="@string/forward"
+                                android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                                android:id="@+id/detailawayforward"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/detailhomesubstitutes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                android:text="@string/substitutes"
+                                android:textColor="@color/colorPrimary"/>
+
+                        <TextView
+                                android:id="@+id/detailawaysubstitutes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+    </FrameLayout>
+</ScrollView>

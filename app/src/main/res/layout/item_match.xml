@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_margin_vertical"
+            android:layout_marginLeft="@dimen/card_margin_horizontal"
+            android:layout_marginRight="@dimen/card_margin_horizontal"
+            android:layout_marginTop="@dimen/card_margin_vertical"
+            android:clickable="false"
+            app:contentPadding="@dimen/card_itempadding">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/btnReminder"
+                    android:layout_width="@dimen/reminder_width"
+                    android:layout_height="@dimen/reminder_height"
+                    android:src="@drawable/ic_notification"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+            <TextView
+                    android:id="@+id/txtmatchdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                    android:layout_below="@id/txtmatchdate"
+                    android:id="@+id/txtmatchtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                    android:id="@+id/parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_item"
+                    android:layout_below="@id/txtmatchtime"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/itemhometeam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="end|center_vertical"
+                        android:textSize="@dimen/item_hometeam"/>
+
+                <TextView
+                        android:id="@+id/itemhomescore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:textSize="@dimen/item_homescore"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/vs"/>
+
+                <TextView
+                        android:id="@+id/itemawayscore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/item_awayteam"/>
+
+                <TextView
+                        android:id="@+id/itemawayteam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/item_awayscore"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

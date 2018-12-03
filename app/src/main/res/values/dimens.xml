@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="height_item">40dp</dimen>
+    <dimen name="itemtop">8dp</dimen>
+    <dimen name="card_itempadding">8dp</dimen>
+    <dimen name="reminder_height">20dp</dimen>
+    <dimen name="reminder_width">20dp</dimen>
+    <dimen name="team_img_size">70dp</dimen>
+    <dimen name="card_margin_vertical">8dp</dimen>
+    <dimen name="card_margin_horizontal">16dp</dimen>
+    <dimen name="item_hometeam">18sp</dimen>
+    <dimen name="item_homescore">18sp</dimen>
+    <dimen name="item_awayteam">18sp</dimen>
+    <dimen name="item_awayscore">18sp</dimen>
+    <dimen name="item_nameteam">20sp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="heightimg_detail_team">80dp</dimen>
+    <dimen name="detail_top_text_margin">4dp</dimen>
+    <dimen name="sizename_teamdetail">18sp</dimen>
+    <dimen name="parent_detail_team">16dp</dimen>
+    <dimen name="item_nameplayer">16sp</dimen>
+    <dimen name="player_weight">28sp</dimen>
+    <dimen name="player_height">28sp</dimen>
+</resources>

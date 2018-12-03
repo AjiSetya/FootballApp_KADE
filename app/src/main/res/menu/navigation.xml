@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/nav_match"
+            android:icon="@drawable/cup"
+            android:title="@string/title_match"/>
+
+    <item
+            android:id="@+id/nav_team"
+            android:icon="@drawable/ball"
+            android:title="@string/title_team"/>
+
+    <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/favorites"
+            android:title="@string/title_favorites"/>
+
+</menu>
